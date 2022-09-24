@@ -19,7 +19,7 @@ const NavBar = observer(() => {
                         </Nav>
                     :
                         <Nav className="m-lg-auto" style={{color:"white"}}>
-                            <Button variant={"outline-light"} onlick={()=>user.setIsAuth(true)}>Авторизация</Button>
+                            <Button variant={"outline-light"} onClick={()=>user.setIsAuth(true)}>Авторизация</Button>
 
                         </Nav>
                     }
