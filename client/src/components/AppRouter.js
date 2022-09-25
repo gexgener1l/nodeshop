@@ -3,8 +3,9 @@ import {Routes,Route} from "react-router-dom";
 import {authRoutes, publicRoutes} from "../routes";
 import Shop from "../pages/Shop";
 import {Context} from "../index";
+import {observer} from "mobx-react-lite";
 
-const AppRouter = () => {
+const AppRouter = observer(() => {
     const {user} = useContext(Context)
 
     console.log(user)
@@ -19,6 +20,6 @@ const AppRouter = () => {
             <Route path="*" element={<Shop/>}/>
         </Routes>
     );
-};
+});
 
 export default AppRouter;

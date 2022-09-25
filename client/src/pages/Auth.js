@@ -31,7 +31,7 @@ const Auth = () => {
 
                         <Button
                             variant={"outline-success"}>
-                            {isLogin? 'войти':"Рагистрация"}
+                            {isLogin? 'войти':"Регистрация"}
                         </Button>
                     </Row>
 
